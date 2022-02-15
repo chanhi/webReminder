@@ -114,13 +114,13 @@ body.dark .sidebar header .toggle {
     margin-top: 35px;
 }
 
-.sidebar .search-box {
+.sidebar .write-box {
     background: var(--primary-color-light);
     border-radius: 6px;
     transition: var(--tran-05);
 }
 
-.search-box input {
+.write-box input {
     height: 100%;
     width: 100%;
     outline: none;
