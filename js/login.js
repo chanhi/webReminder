@@ -14,7 +14,8 @@ function onLoginSubmit(event) {
     event.preventDefault(); // submit 의 특성상 새로고침을 하는데 이것을 막음
     loginForm.classList.add(HIDDEN_CLASSNAME);
     alertLogin.classList.add(HIDDEN_CLASSNAME);
-    sidebarNav.classList.remove(NONE_CLICK)
+    sidebarNav.classList.remove(NONE_CLICK);
+    logoutForm.classList.remove(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     paintGreetings(username);
@@ -28,6 +29,7 @@ function onLogoutClick(event) {
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    sidebarNav.classList.remove(NONE_CLICK);
     logoutForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -36,8 +38,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     alertLogin.classList.remove(HIDDEN_CLASSNAME);
-    sidebarNav.classList.add(NONE_CLICK)
-    logoutForm.classList.add(HIDDEN_CLASSNAME);
+    sidebarNav.classList.add(NONE_CLICK);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUsername);
