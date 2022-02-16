@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "sidebar.css";
+@import "topbox.css";
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -40,8 +41,8 @@ body.dark {
 .home {
     position: relative;
     height: 100vh;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 300px;
+    width: calc(100% - 300px);
     background: var(--body-color);
     transition: var(--tran-05);
 }
@@ -60,4 +61,10 @@ body.dark {
 
 .hidden {
     display: none;
-  }
+    opacity: 0;
+    transition: var(--tran-03);
+}
+
+.none-click {
+    pointer-events: none;
+}
