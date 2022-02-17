@@ -42,6 +42,7 @@ body.dark {
     position: relative;
     height: 100vh;
     left: 300px;
+    padding-top: 20px;
     width: calc(100% - 300px);
     background: var(--body-color);
     transition: var(--tran-05);

@@ -1,12 +1,54 @@
 .home-top-box {
+    border-radius: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin: 0px 15px 0px 15px;
+    height: 60%;
+    background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.home-top-box .text {
+    color: var(--text-color);
 }
 
 #js-click {
     
+}
+
+.home-bottom-box {
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px 0px 15px;
+    height: 35%;
+    background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.home-bottom-box .text {
+    color: var(--text-color);
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quoteContent {
+    font: bold;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#quoteAuthor {
+    font-size: 14px;
+    font-weight: 600;
 }

@@ -11,7 +11,7 @@ const NONE_CLICK = "none-click";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
-    event.preventDefault(); // submit 의 특성상 새로고침을 하는데 이것을 막음
+    event.preventDefault(); 
     loginForm.classList.add(HIDDEN_CLASSNAME);
     alertLogin.classList.add(HIDDEN_CLASSNAME);
     sidebarNav.classList.remove(NONE_CLICK);
@@ -25,7 +25,7 @@ function onLogoutClick(event) {
     localStorage.removeItem(USERNAME_KEY);
     window.location.reload();
 }
-//logout 후에 저장되어있는 localstorge를 날려야 함
+
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);

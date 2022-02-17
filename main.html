@@ -59,7 +59,7 @@
     <main class="home">
         <div class="home-top-box">
             <div id="js-clock">
-                <h2>00:00:00</h2>
+                <h2 class="text">00:00:00</h2>
             </div>
             
             <form class="hidden" id="login-form">
@@ -67,24 +67,22 @@
                 <input type="submit" value="Log In"/>
             </form>
     
-            <h1 id="greeting" class="hidden"></h1>
+            <h1 id="greeting" class="hidden text"></h1>
+            <div id="alert-login" class="hidden text">please login to use ToDo</div>
         </div>
 
-        <div id="alert-login" class="hidden">please login to use ToDo</div>
-
-        <ul id="todo-list"></ul>
-
-        <div id="quote">
-            <span id="quoteContent"></span>
-            <span id="quoteAuthor"></span>
-        </div>
-
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div class="home-bottom-box">
+            <div id="quote">
+                <span id="quoteContent" class="text"></span>
+                <span id="quoteAuthor" class="text"></span>
+            </div>
+    
+            <div id="weather">
+                <span class="text"></span>
+                <span class="text"></span>
+            </div>
         </div>
         
-        <ul class="js-toDoList"></ul>
     </main>
     
     <script src="js/login.js"></script>
