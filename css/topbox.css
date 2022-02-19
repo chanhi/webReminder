@@ -7,16 +7,25 @@
     justify-content: center;
     margin: 0px 15px 0px 15px;
     height: 60%;
-    background-color: var(--sidebar-color);
+    overflow: hidden;
     transition: var(--tran-05);
+}
+
+.content {
+    z-index: 1;
 }
 
 .home-top-box .text {
     color: var(--text-color);
 }
 
-#js-click {
-    
+#top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home-bottom-box {

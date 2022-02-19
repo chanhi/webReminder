@@ -58,17 +58,18 @@
     </nav>
     <main class="home">
         <div class="home-top-box">
-            <div id="js-clock">
+            <img src="" id="top-image">
+            <div id="js-clock" class="content">
                 <h2 class="text">00:00:00</h2>
             </div>
             
-            <form class="hidden" id="login-form">
+            <form class="content hidden" id="login-form">
                 <input required maxlength="15" type="text" placeholder="What is your name"/>
                 <input type="submit" value="Log In"/>
             </form>
     
-            <h1 id="greeting" class="hidden text"></h1>
-            <div id="alert-login" class="hidden text">please login to use ToDo</div>
+            <h1 id="greeting" class="content hidden text"></h1>
+            <div id="alert-login" class="content hidden text">please login to use ToDo</div>
         </div>
 
         <div class="home-bottom-box">
@@ -89,7 +90,8 @@
     <script src="js/clock.js"></script>
 	<script src="js/newtodo.js"></script>
     <script src="js/quote.js"></script>
-    <!--<script src="js/weather.js"></script>-->
+    <script src="js/weather.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/bg.js"></script>
 </body>
 </html>
