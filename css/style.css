@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "sidebar.css";
-@import "topbox.css";
+@import "homebox.css";
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -16,6 +16,7 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #ddd;
     --text-color: #707070;
+	--text-home-color: #1A1A40;
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -36,6 +37,7 @@ body.dark {
     --primary-color-light: #3A3B3C;
     --toggle-color: #FFF;
     --text-color: #CCC;
+	--text-home-color: #EEEEEE;
 }
 
 .home {
