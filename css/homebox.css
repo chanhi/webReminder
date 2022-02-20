@@ -11,6 +11,19 @@
     transition: var(--tran-05);
 }
 
+#login-form input {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid var(--text-home-color);
+    background: none;
+}
+
+#login-form input::placeholder {
+    text-align: center;
+}
+
 .content {
     z-index: 1;
 }
