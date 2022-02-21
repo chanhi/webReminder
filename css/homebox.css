@@ -12,6 +12,9 @@
 }
 
 #login-form input {
+	width: 300px;
+	height: 50px;
+	font-size: 25px;
     outline: none;
     border-top: none;
     border-left: none;
@@ -22,6 +25,11 @@
 
 #login-form input::placeholder {
     text-align: center;
+	font-size: 25px;
+}
+
+#alert-login {
+	font-size: 15px;
 }
 
 .content {
@@ -30,6 +38,7 @@
 
 .home-top-box .home-text {
     color: var(--text-home-color);
+	font-size: 30px;
 }
 
 @keyframes fadeIn {
@@ -81,6 +90,6 @@
 }
 
 #quoteAuthor {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
